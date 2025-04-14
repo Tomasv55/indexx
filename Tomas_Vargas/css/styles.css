@@ -1,0 +1,59 @@
+/* Estilos base del sitio y barra navegación */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  .navbar {
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Carrusel estable */
+  .carousel-item img {
+    height: 400px;          
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilo para título arcoíris */
+.titulo-rainbow {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0057, #ff9900, #faff00, #00ff85, #00cfff, #9f00ff);
+    background-size: 300%;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+    animation: rainbowMove 6s linear infinite;
+  }
+  
+  @keyframes rainbowMove {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+  }
+
+/* Efecto mouse */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* resaltar los campos obligatorios */
+  .form-label[required]::after {
+    content: " *";
+    color: #dc3545; /* Rojo de Bootstrap */
+  }
+  
+  
+  

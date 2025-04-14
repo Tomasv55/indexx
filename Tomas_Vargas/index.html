@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Aniquilador del Hambre</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Barra de navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-4 text-primary" href="#">El Aniquilador del Hambre</a>
+        
+        <!-- Botón para responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#historia">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sucursales">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Título con efecto arcoíris -->
+<h1 class="titulo-rainbow text-center my-4">El Aniquilador del Hambre</h1>
+
+<!-- Carrusel de productos -->
+
+  <!-- Sección de Menú -->
+<section id="menu" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestra Carta</h2>
+
+    <!-- Carrusel Bootstrap -->
+    <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Primer ítem: Sandwiches -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <h3 class="text-center mb-4">Sandwiches</h3>
+
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/sandwich1.jpg" class="card-img-top" alt="Sandwich Clásico">
+                <div class="card-body">
+                  <h5 class="card-title">Sandwich Clásico</h5>
+                  <p class="card-text">Pan artesanal, carne, tomate, lechuga, mayonesa casera</p>
+                  <p class="fw-bold text-primary">$3.500</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/sandwich2.jpg" class="card-img-top" alt="Sandwich Veggie">
+                <div class="card-body">
+                  <h5 class="card-title">Sandwich Veggie</h5>
+                  <p class="card-text">Pan integral, hamburguesa de lentejas, palta, zanahoria rallada</p>
+                  <p class="fw-bold text-primary">$3.200</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/sandwich3.jpg" class="card-img-top" alt="Sandwich Barros Luco">
+                <div class="card-body">
+                  <h5 class="card-title">Barros Luco</h5>
+                  <p class="card-text">Carne a la plancha, queso fundido, pan frica</p>
+                  <p class="fw-bold text-primary">$3.800</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segundo ítem: Platos -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <h3 class="text-center mb-4">Platos</h3>
+
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/plato1.jpg" class="card-img-top" alt="Lomo a lo pobre">
+                <div class="card-body">
+                  <h5 class="card-title">Lomo a lo Pobre</h5>
+                  <p class="card-text">Lomo, cebolla caramelizada, papas fritas, huevo frito</p>
+                  <p class="fw-bold text-primary">$6.000</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/plato2.jpg" class="card-img-top" alt="Pastel de Choclo">
+                <div class="card-body">
+                  <h5 class="card-title">Pastel de Choclo</h5>
+                  <p class="card-text">Choclo molido, pino de carne, aceituna, huevo duro</p>
+                  <p class="fw-bold text-primary">$5.500</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/plato3.jpg" class="card-img-top" alt="Cazuela de Vacuno">
+                <div class="card-body">
+                  <h5 class="card-title">Cazuela</h5>
+                  <p class="card-text">Carne, papas, zapallo, arroz, porotos verdes, zanahoria</p>
+                  <p class="fw-bold text-primary">$5.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tercer ítem: Bebestibles -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <h3 class="text-center mb-4">Bebestibles</h3>
+
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/bebida1.jpg" class="card-img-top" alt="Jugo natural">
+                <div class="card-body">
+                  <h5 class="card-title">Jugo natural</h5>
+                  <p class="card-text">Jugo exprimido de naranja o frutilla</p>
+                  <p class="fw-bold text-primary">$2.000</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/bebida2.jpg" class="card-img-top" alt="Refresco">
+                <div class="card-body">
+                  <h5 class="card-title">Bebida</h5>
+                  <p class="card-text">Coca-Cola, Fanta, Sprite, en lata o botella</p>
+                  <p class="fw-bold text-primary">$1.500</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/bebida3.jpg" class="card-img-top" alt="Té o Café">
+                <div class="card-body">
+                  <h5 class="card-title">Té o Café</h5>
+                  <p class="card-text">Infusiones calientes a elección</p>
+                  <p class="fw-bold text-primary">$1.200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuarto ítem: Postres -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <h3 class="text-center mb-4">Postres</h3>
+
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/postre1.jpg" class="card-img-top" alt="Leche Asada">
+                <div class="card-body">
+                  <h5 class="card-title">Leche Asada</h5>
+                  <p class="card-text">Postre tradicional horneado con caramelo</p>
+                  <p class="fw-bold text-primary">$2.200</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/postre2.jpg" class="card-img-top" alt="Helado artesanal">
+                <div class="card-body">
+                  <h5 class="card-title">Helado Artesanal</h5>
+                  <p class="card-text">Sabores: frambuesa, chocolate, manjar</p>
+                  <p class="fw-bold text-primary">$2.800</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/postre3.jpg" class="card-img-top" alt="Kuchen">
+                <div class="card-body">
+                  <h5 class="card-title">Kuchen Casero</h5>
+                  <p class="card-text">Frutas frescas y masa artesanal</p>
+                  <p class="fw-bold text-primary">$2.500</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Historia y Testimonios -->
+<section id="historia" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestra Historia</h2>
+
+    <!-- Historia con imágenes -->
+    <div class="row mb-5">
+      <!-- Imagen antigua -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="images/local_antiguo.jpg" class="card-img-top" alt="Foto antigua del local">
+          <div class="card-body">
+            <h5 class="card-title">Nuestros Comienzos</h5>
+            <p class="card-text">Así lucía nuestro primer local en 2005: pequeño, familiar, pero con grandes sueños y sabor casero inigualable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen actual -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="images/local_nuevo.jpg" class="card-img-top" alt="Foto actual del local">
+          <div class="card-body">
+            <h5 class="card-title">Hoy en Día</h5>
+            <p class="card-text">Hoy contamos con varios locales modernos, pero seguimos con la misma pasión por entregar comida rica y hecha con cariño.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonios -->
+    <h3 class="text-center mb-4">Lo que dicen nuestros clientes</h3>
+    <div class="row">
+      <!-- Testimonio 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 h-100 card-hover">
+          <div class="card-body">
+            <h5 class="card-title">Sofía M.</h5>
+            <p class="card-text">¡El mejor sandwich que he probado! Siempre vuelvo por el clásico con mayo casera.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 h-100 card-hover">
+          <div class="card-body">
+            <h5 class="card-title">Carlos G.</h5>
+            <p class="card-text">Me encanta el ambiente del local nuevo. Rápido, limpio y sabroso. 10/10.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 h-100 card-hover">
+          <div class="card-body">
+            <h5 class="card-title">Fernanda R.</h5>
+            <p class="card-text">Siempre que paso por la ciudad, es parada obligatoria. ¡Gracias por tantos años de sabor!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN SUCURSALES -->
+<section id="sucursales" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 display-4 fw-bold text-danger">Nuestras Sucursales</h2>
+    
+    <div class="row g-4">
+      <!-- Sucursal 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <div class="card-header bg-danger text-white">
+            <h3 class="h5 mb-0">Sucursal Centro</h3>
+          </div>
+          <div class="card-body">
+            <!-- Carrusel de imágenes -->
+            <div id="carouselCentro" class="carousel slide mb-3" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="images/sucursal-centro-fachada.jpg" class="d-block w-100" alt="Fachada Sucursal Centro" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sucursal-centro-interior.jpg" class="d-block w-100" alt="Interior Sucursal Centro" style="height: 200px; object-fit: cover;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCentro" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCentro" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+              </button>
+            </div>
+            
+            <!-- Información -->
+            <div class="mb-3 ratio ratio-16x9">
+              <iframe src="https://maps.google.com/maps?q=centro+santiago&output=embed" allowfullscreen></iframe>
+            </div>
+            <p><i class="fas fa-subway text-danger"></i> Metro Plaza de Armas (L5)</p>
+            <p><i class="fas fa-bus text-danger"></i> Líneas 101, 105, 503</p>
+            <p><i class="fas fa-phone text-danger"></i> +56 2 2345 6789</p>
+            <p><i class="fas fa-envelope text-danger"></i> centro@aniquiladorhambre.cl</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sucursal 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <div class="card-header bg-danger text-white">
+            <h3 class="h5 mb-0">Sucursal Providencia</h3>
+          </div>
+          <div class="card-body">
+
+            <!-- Carrusel de imágenes -->
+            <div id="carouselProvidencia" class="carousel slide mb-3" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="images/sucursal-providencia-fachada.jpg" class="d-block w-100" alt="Fachada Sucursal Providencia" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sucursal-providencia-interior.jpg" class="d-block w-100" alt="Interior Sucursal Providencia" style="height: 200px; object-fit: cover;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProvidencia" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProvidencia" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+              </button>
+            </div>
+            
+            <!-- Información -->
+            <div class="mb-3 ratio ratio-16x9">
+              <iframe src="https://maps.google.com/maps?q=providencia+santiago&output=embed" allowfullscreen></iframe>
+            </div>
+            <p><i class="fas fa-subway text-danger"></i> Metro Los Leones (L1)</p>
+            <p><i class="fas fa-bus text-danger"></i> Líneas 405, 519, D07</p>
+            <p><i class="fas fa-phone text-danger"></i> +56 2 2456 7890</p>
+            <p><i class="fas fa-envelope text-danger"></i> providencia@aniquiladorhambre.cl</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sucursal 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <div class="card-header bg-danger text-white">
+            <h3 class="h5 mb-0">Sucursal Ñuñoa</h3>
+          </div>
+          <div class="card-body">
+            <!-- Carrusel de imágenes -->
+            <div id="carouselNunoa" class="carousel slide mb-3" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="images/sucursal-nunoa-fachada.jpg" class="d-block w-100" alt="Fachada Sucursal Ñuñoa" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sucursal-nunoa-interior.jpg" class="d-block w-100" alt="Interior Sucursal Ñuñoa" style="height: 200px; object-fit: cover;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselNunoa" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselNunoa" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+              </button>
+            </div>
+            
+            <!-- Información -->
+            <div class="mb-3 ratio ratio-16x9">
+              <iframe src="https://maps.google.com/maps?q=ñuñoa+santiago&output=embed" allowfullscreen></iframe>
+            </div>
+            <p><i class="fas fa-subway text-danger"></i> Metro Ñuñoa (L6)</p>
+            <p><i class="fas fa-bus text-danger"></i> Líneas 513, D14, 303</p>
+            <p><i class="fas fa-phone text-danger"></i> +56 2 2567 8901</p>
+            <p><i class="fas fa-envelope text-danger"></i> nunoa@aniquiladorhambre.cl</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN FORMULARIO SIMPLIFICADA -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <h2 class="text-center mb-4">¿Consulta o reclamo?</h2>
+        
+        <form action="#" method="POST">
+          <!-- Campo Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo*</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          
+          <!-- Campo Correo -->
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico*</label>
+            <input type="email" class="form-control" id="correo" required>
+          </div>
+          
+          <!-- Campo Teléfono -->
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono*</label>
+            <input type="tel" class="form-control" id="telefono" required>
+          </div>
+          
+          <!-- Radio Buttons: Tipo de contacto -->
+          <div class="mb-3">
+            <label class="form-label">Tipo*</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tipo" id="consulta" value="consulta" required>
+              <label class="form-check-label" for="consulta">Consulta</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tipo" id="reclamo" value="reclamo">
+              <label class="form-check-label" for="reclamo">Reclamo</label>
+            </div>
+          </div>
+          
+          <!-- Campo Mensaje -->
+          <div class="mb-4">
+            <label for="mensaje" class="form-label">Mensaje*</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          
+          <!-- Botón Enviar -->
+          <div class="d-grid">
+            <button class="btn btn-danger" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4" style="background-color: #2c3e50;"> 
+  <div class="container">
+    <div class="row text-white"> 
+      
+      <!-- Columna 1: Teléfonos -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5 class="fw-bold mb-3">Teléfonos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="fas fa-phone-alt me-2"></i> Centro: +56 2 2345 6789
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-phone-alt me-2"></i> Providencia: +56 2 2456 7890
+          </li>
+          <li>
+            <i class="fas fa-phone-alt me-2"></i> Ñuñoa: +56 2 2567 8901
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Columna 2: Correos -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5 class="fw-bold mb-3">Correos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="fas fa-envelope me-2"></i> centro@aniquiladorhambre.cl
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-envelope me-2"></i> providencia@aniquiladorhambre.cl
+          </li>
+          <li>
+            <i class="fas fa-envelope me-2"></i> nunoa@aniquiladorhambre.cl
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Columna 3: Redes Sociales -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Síguenos</h5>
+        <div class="d-flex gap-3"> <!-- Espacio entre íconos -->
+          <a href="#" class="text-white fs-3">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white fs-3">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="text-white fs-3">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        
+        <!-- Opcional: Horario -->
+        <div class="mt-4">
+          <p class="mb-1">
+            <i class="fas fa-clock me-2"></i> Lunes a Viernes: 9:00 - 22:00
+          </p>
+          <p>
+            <i class="fas fa-clock me-2"></i> Sábado y Domingo: 10:00 - 20:00
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Bootstrap JS (para que funcione el menú en móvil) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
